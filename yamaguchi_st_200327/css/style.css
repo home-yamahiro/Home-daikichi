@@ -1,0 +1,327 @@
+@charset "UTF-8";
+@import url("reset.css");
+body {
+  font-family: "游ゴシック体", YuGothic;
+  color: #1e0606;
+}
+
+header {
+  padding: 25px 30px 40px;
+}
+
+.header_module-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header_module-icon > li:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.header_module-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_module-main .header_menuBox {
+  margin-top: 40px;
+}
+
+.header_module-main .header_menuBox .header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_module-main .header_menuBox .header_menu > li:nth-child(n + 2) {
+  margin-left: 45px;
+}
+
+.menu_tab {
+  text-decoration: none;
+  color: #1e0606;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.banner_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.banner_module-imgBox {
+  position: relative;
+  width: 1000px;
+  height: 351px;
+  background-image: url("../img/banner_01.png");
+  background-repeat: no-repeat;
+}
+
+.banner_module-imgBox .banner_module-img {
+  position: absolute;
+}
+
+.banner_module-imgBox .banner_02_img {
+  width: 1000px;
+  height: 351px;
+  background-image: url("../img/banner_02.png");
+  background-repeat: no-repeat;
+  top: 0;
+  right: 100%;
+  text-align: right;
+}
+
+.banner_module-imgBox .banner_03_img {
+  width: 1000px;
+  height: 351px;
+  background-image: url("../img/banner_03.png");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 100%;
+  text-align: left;
+}
+
+.banner_module-imgBox .prev_img {
+  position: absolute;
+  top: 44%;
+  left: -36px;
+}
+
+.banner_module-imgBox .next_img {
+  position: absolute;
+  top: 44%;
+  right: -36px;
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 115px;
+  background-color: #f3f3f3;
+}
+
+main .main_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main_module > li:nth-child(n + 2) {
+  margin-left: 50px;
+}
+
+.contents {
+  width: 650px;
+}
+
+.contents > li {
+  position: relative;
+}
+
+.contents > li:nth-child(n + 2) {
+  margin-top: 41px;
+}
+
+.contents > li:nth-child(-n + 2)::before {
+  content: url(../img/media_m_new.png);
+  position: absolute;
+  top: -4px;
+  left: -5px;
+}
+
+.media_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.media_module .media_module-body {
+  padding: 25px 30px;
+}
+
+.date_tag_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.date {
+  color: #1e0606;
+  font-size: 16px;
+}
+
+.date::before {
+  content: url("../img/media_m_timer.png");
+  margin-right: 5px;
+}
+
+.tag {
+  padding: 7px 20px;
+  text-decoration: none;
+  background-color: #bfa34c;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.media_module_txtBox {
+  margin-top: 20px;
+}
+
+.media_module_txtBox-link {
+  text-decoration: none;
+}
+
+.media_module_txtBox-link .contents_txt {
+  color: #1e0606;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.sidebar-body {
+  margin-top: 25px;
+}
+
+.sidebar-body .sidebar-body_title {
+  padding: 18px 0;
+  text-align: center;
+  background-color: #bfa34c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar-body .sidebar-body_category > li {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.sidebar-body .sidebar-body_category > li:last-child {
+  border: none;
+}
+
+.category {
+  position: relative;
+  display: block;
+  padding: 20px 20px 20px 25px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #1e0606;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.category::after {
+  position: absolute;
+  content: url(../img/sidemedia_m_arrow.png);
+  top: 50%;
+  right: 20px;
+}
+
+footer {
+  position: relative;
+  z-index: 0;
+}
+
+footer .footer_pagetopBtn {
+  position: absolute;
+  top: -38px;
+  left: 48%;
+  z-index: -1;
+}
+
+.footer_module {
+  padding: 35px 10px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_module_bdtop {
+  padding-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #f3f3f3;
+}
+
+.footer_txtBox {
+  margin-left: 50px;
+}
+
+.footer_txtBox .footer_txt {
+  font-size: 12px;
+}
+
+.footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_menu > li:nth-child(n + 2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_menu > li:nth-child(n + 2)::before {
+  content: url(../img/footer_slash.png);
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.menu_tab_footer {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.footer_txtBox_inc {
+  margin-top: 20px;
+}
+
+.footer_txtBox_inc .footer_txt_inc {
+  font-size: 13px;
+}
+/*# sourceMappingURL=style.css.map */
